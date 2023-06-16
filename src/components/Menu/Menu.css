@@ -1,0 +1,30 @@
+.menu{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.menu-inner{
+    width: 75%;
+    max-height: 90%;
+    height: 100%;
+    background: #fff;
+    border-radius: 30px;
+    display: flex;
+    align-items: space-evenly;
+    padding: 25px;
+}
+
+.menu-item__list{
+    list-style: none;
+    width: 100%;
+}
+
+.menu-item__list li{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #35281e;
+}
