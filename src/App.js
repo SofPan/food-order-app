@@ -30,10 +30,13 @@ const MENU_ITEMS = [
 ]
 
 function App() {
+  const addToCart = (item) => {
+    console.log('add item to cart: ', item);
+  }
   return (
     <>
       <Header />
-      <Menu items={MENU_ITEMS}/>
+      <Menu addToCart={addToCart} items={MENU_ITEMS}/>
     </>
   );
 }
