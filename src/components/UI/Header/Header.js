@@ -8,14 +8,14 @@ import './Header.css';
             - clone btn, order btn (alerts ordering)
             - cart subtotal
       */
-const Header = () => {
+const Header = props => {
 	return (
 		<header className='header'>
             <div className='header-inner'>
                 <div className='logo'>
                     <h1>Ye Olde <br/>Chocolate Shoppe</h1>
                 </div>
-                <Cart />
+                <Cart items={props.cartItems}/>
             </div>
 		</header>
 	);

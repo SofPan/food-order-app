@@ -25,7 +25,7 @@ const MenuItem = (props) => {
 			<div>
 				<h2 className='menu-item__title'>{props.title}</h2>
 				<p className='menu-item__description'>{props.description}</p>
-				<p className='menu-item__price'>{props.cost}</p>
+				<p className='menu-item__price'>${props.cost}</p>
 			</div>
 			<div>
 				<form onSubmit={handleSubmit}>

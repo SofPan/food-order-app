@@ -14,7 +14,7 @@ const Cart = props => {
     return(
         <div className="cart-container">
             <Button buttonClick={handleClick} text="Cart"/>
-            {viewCart ? (<Modal onCancel={handleClick}/>) : ''};        
+            {viewCart ? (<Modal items={props.items} onCancel={handleClick}/>) : ''};        
         </div>
     )
 }
