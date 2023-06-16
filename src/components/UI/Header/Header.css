@@ -1,0 +1,20 @@
+.header{
+    width: 100vw;
+    height: 20vh;
+    background-color: #1d1610;
+}
+
+.header-inner{
+    max-width: 1220px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.header h1{
+    color: #fff;
+    font-size: 20px;
+}
