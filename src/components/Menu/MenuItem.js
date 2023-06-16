@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import Button from "../UI/Button/Button";
 
 import "./MenuItem.css";
+import ListItem from "../UI/ListItem/ListItem";
 
 const MenuItem = (props) => {
 	const [amount, setAmount] = useState(1);
@@ -21,12 +22,8 @@ const MenuItem = (props) => {
         setAmount(1);
     }
 	return (
-		<li className='menu-item'>
-			<div>
-				<h2 className='menu-item__title'>{props.title}</h2>
-				<p className='menu-item__description'>{props.description}</p>
-				<p className='menu-item__price'>${props.cost}</p>
-			</div>
+		<li key={props.key} className='menu-item'>
+			<ListItem title={props.title} description={props.description} cost={props.cost}/>
 			<div>
 				<form onSubmit={handleSubmit}>
 					<div>
