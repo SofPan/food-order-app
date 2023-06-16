@@ -10,6 +10,7 @@ const MenuItem = (props) => {
     const itemDetails = {
         title: props.title,
         cost: props.cost,
+		id: props.id,
         amount: amount,
     }
 	const handleChange = (e) => {
@@ -22,7 +23,7 @@ const MenuItem = (props) => {
         setAmount(1);
     }
 	return (
-		<li key={props.key} className='menu-item'>
+		<li key={props.id} className='menu-item'>
 			<ListItem title={props.title} description={props.description} cost={props.cost}/>
 			<div>
 				<form onSubmit={handleSubmit}>

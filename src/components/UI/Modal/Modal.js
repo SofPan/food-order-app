@@ -12,7 +12,7 @@ const Modal = (props) => {
 					<ul className='cart-items__list'>
 						{props.items.map((item) => {
 							return (
-								<li key={Math.random()}>
+								<li key={item.id}>
 									<ListItem
 										title={item.title}
 										cost={item.cost}
