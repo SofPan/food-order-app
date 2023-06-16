@@ -11,3 +11,7 @@ h1, h2, h3, h4, section, div, article, header, footer, nav, ul, ol, li, p, input
     margin: 0;
     padding: 0;
 }
+
+.sr-only{
+    display: none !important;
+}

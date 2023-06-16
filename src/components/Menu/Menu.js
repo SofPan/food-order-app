@@ -13,7 +13,7 @@ const Menu = props => {
             <div className="menu-inner">
                 <ul className="menu-item__list">
                     {props.items.map((item) => {
-                        return <MenuItem key={item.id} title={item.title} cost={item.cost} />
+                        return <MenuItem key={item.id} title={item.title} description={item.description} cost={item.cost} />
                     })}
                 </ul>
             </div>

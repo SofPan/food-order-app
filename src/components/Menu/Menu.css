@@ -15,16 +15,14 @@
     border-radius: 30px;
     display: flex;
     align-items: space-evenly;
-    padding: 25px;
+    padding: 0px 25px;
 }
 
 .menu-item__list{
     list-style: none;
     width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
 }
 
-.menu-item__list li{
-    display: flex;
-    justify-content: space-between;
-    border-bottom: 1px solid #35281e;
-}
