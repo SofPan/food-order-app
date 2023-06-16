@@ -1,13 +1,10 @@
+import Header from './components/UI/Header/Header';
 import './index.css';
 
 function App() {
   return (
     <div className="App">
-      {/* Header component includes logo + cart
-            - cart is a modal includes ability to change amount
-            - clone btn, order btn (alerts ordering)
-            - cart subtotal
-      */}
+      <Header />
       {/* Menu component includes menu items, cost, amount input, add to cart button */}
     </div>
   );
