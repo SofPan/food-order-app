@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import Menu from './components/Menu/Menu';
 import Header from './components/UI/Header/Header';
 import './index.css';
+import CartProvider from './context/CartProvider';
 
 const MENU_ITEMS = [
   {
@@ -31,18 +32,20 @@ const MENU_ITEMS = [
 ]
 
 function App() {
-  const [cartItems, setCartItems] = useState([]);
+  // const [cartItems, setCartItems] = useState([]);
 
-  const addToCart = (item) => {
-    setCartItems((prevItems) => {
-      return [...prevItems, item];
-    })
-  }
+  // const addToCart = (item) => {
+  //   setCartItems((prevItems) => {
+  //     return [...prevItems, item];
+  //   });
+    
+  // }
+
   return (
-    <>
-      <Header cartItems={cartItems}/>
-      <Menu addToCart={addToCart} items={MENU_ITEMS}/>
-    </>
+    <CartProvider>
+      <Header />
+      <Menu items={MENU_ITEMS}/>
+    </CartProvider>
   );
 }
 
